@@ -2,16 +2,21 @@
 
 Barebox socfpga_mkimage
 -----------------------
-
 This is an open replacement for Altera/Intel's mkpimage tool taken from the
 barebox project:
 
 https://git.pengutronix.de/cgit/barebox/tree/scripts/socfpga_mkimage.c
 
 
+Yocto recipe
+------------
+Please find a Yocto recipe for socfpga_mkimage in
+
+    meta-tes/recipes-tools/mkpimage/mkpimage.bb
+
+
 Example
 -------
-
 This will generate an U-Boot image "u-boot-dtb.mkpimage.bin" for a Arria 10 FPGA:
 
     socfpga_mkimage -v 1 -o u-boot-dtb.mkpimage.bin u-boot-dtb.bin u-boot-dtb.bin u-boot-dtb.bin u-boot-dtb.bin
